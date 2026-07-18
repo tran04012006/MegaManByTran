@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 9c0ddacb945ad4c82b354eedb9224cc2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3414687705091536216
+    second: Full_Energy_Replenisher_0
+  - first:
+      213: -8240493322346133025
+    second: Full_Energy_Replenisher_1
+  - first:
+      213: -5426018562928277516
+    second: Full_Energy_Replenisher_2
+  - first:
+      213: 8554777004154095130
+    second: Full_Energy_Replenisher_3
+  - first:
+      213: -4871180985018619816
+    second: Full_Energy_Replenisher_4
+  - first:
+      213: 2768151657898201930
+    second: Full_Energy_Replenisher_5
+  - first:
+      213: -5782208056386661956
+    second: Full_Energy_Replenisher_6
+  - first:
+      213: -5020978134327716897
+    second: Full_Energy_Replenisher_7
+  - first:
+      213: 4112565672396798063
+    second: Full_Energy_Replenisher_8
+  - first:
+      213: 7671357729571934257
+    second: Full_Energy_Replenisher_9
+  - first:
+      213: 2431216942803454160
+    second: Full_Energy_Replenisher_10
+  - first:
+      213: 1089507982962602643
+    second: Full_Energy_Replenisher_11
+  - first:
+      213: -6734556571301865019
+    second: Full_Energy_Replenisher_12
+  - first:
+      213: -1534285391521638291
+    second: Full_Energy_Replenisher_13
+  - first:
+      213: -6195808909210431703
+    second: Full_Energy_Replenisher_14
+  - first:
+      213: 6058795234474223510
+    second: Full_Energy_Replenisher_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Full_Energy_Replenisher_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 9
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 855ffd04068636f20800000000000000
+      internalID: 3414687705091536216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Full_Energy_Replenisher_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 4
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd9849bbbf2e3ad80800000000000000
+      internalID: -8240493322346133025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Full_Energy_Replenisher_2
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 9
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f70cf38dd8e2b4b0800000000000000
+      internalID: -5426018562928277516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Full_Energy_Replenisher_3
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 2
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1609413c5ca8b670800000000000000
+      internalID: 8554777004154095130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Full_Energy_Replenisher_4
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 9
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 858e357e3b6166cb0800000000000000
+      internalID: -4871180985018619816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Full_Energy_Replenisher_5
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 4
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a435e6d34437a6620800000000000000
+      internalID: 2768151657898201930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Full_Energy_Replenisher_6
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 9
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb1dbad786871cfa0800000000000000
+      internalID: -5782208056386661956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Full_Energy_Replenisher_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 10
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd394663df6e15ab0800000000000000
+      internalID: -5020978134327716897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Full_Energy_Replenisher_8
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 4
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f683da290b4c21930800000000000000
+      internalID: 4112565672396798063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Full_Energy_Replenisher_9
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 10
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1301510e533267a60800000000000000
+      internalID: 7671357729571934257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Full_Energy_Replenisher_10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d806b7adea6db120800000000000000
+      internalID: 2431216942803454160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Full_Energy_Replenisher_11
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3923070fcb5be1f00800000000000000
+      internalID: 1089507982962602643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Full_Energy_Replenisher_12
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c997c7ca7c0a82a0800000000000000
+      internalID: -6734556571301865019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Full_Energy_Replenisher_13
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 1
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d68184eb09f15bae0800000000000000
+      internalID: -1534285391521638291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Full_Energy_Replenisher_14
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92fcf46bf90140aa0800000000000000
+      internalID: -6195808909210431703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Full_Energy_Replenisher_15
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 0
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6976aa53a2a251450800000000000000
+      internalID: 6058795234474223510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Full_Energy_Replenisher_0: 3414687705091536216
+      Full_Energy_Replenisher_1: -8240493322346133025
+      Full_Energy_Replenisher_10: 2431216942803454160
+      Full_Energy_Replenisher_11: 1089507982962602643
+      Full_Energy_Replenisher_12: -6734556571301865019
+      Full_Energy_Replenisher_13: -1534285391521638291
+      Full_Energy_Replenisher_14: -6195808909210431703
+      Full_Energy_Replenisher_15: 6058795234474223510
+      Full_Energy_Replenisher_2: -5426018562928277516
+      Full_Energy_Replenisher_3: 8554777004154095130
+      Full_Energy_Replenisher_4: -4871180985018619816
+      Full_Energy_Replenisher_5: 2768151657898201930
+      Full_Energy_Replenisher_6: -5782208056386661956
+      Full_Energy_Replenisher_7: -5020978134327716897
+      Full_Energy_Replenisher_8: 4112565672396798063
+      Full_Energy_Replenisher_9: 7671357729571934257
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

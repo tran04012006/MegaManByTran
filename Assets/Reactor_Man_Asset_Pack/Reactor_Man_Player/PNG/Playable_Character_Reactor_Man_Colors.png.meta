@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: 22d9a7cb384947d4bb3b4e4455f9b682
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1820946517126320954
+    second: Playable_Character_Reactor_Man_Colors_0
+  - first:
+      213: 3906251563945056796
+    second: Playable_Character_Reactor_Man_Colors_1
+  - first:
+      213: 8460128506753451502
+    second: Playable_Character_Reactor_Man_Colors_2
+  - first:
+      213: 9199194198784090236
+    second: Playable_Character_Reactor_Man_Colors_3
+  - first:
+      213: 1718453362185535932
+    second: Playable_Character_Reactor_Man_Colors_4
+  - first:
+      213: 1026221995073303891
+    second: Playable_Character_Reactor_Man_Colors_5
+  - first:
+      213: 4273773911853492744
+    second: Playable_Character_Reactor_Man_Colors_6
+  - first:
+      213: 8556501721956697780
+    second: Playable_Character_Reactor_Man_Colors_7
+  - first:
+      213: 4485804185353340380
+    second: Playable_Character_Reactor_Man_Colors_8
+  - first:
+      213: -7552843654464388625
+    second: Playable_Character_Reactor_Man_Colors_9
+  - first:
+      213: -2150837595561803628
+    second: Playable_Character_Reactor_Man_Colors_10
+  - first:
+      213: -7982245971255970839
+    second: Playable_Character_Reactor_Man_Colors_11
+  - first:
+      213: 4361992314107048482
+    second: Playable_Character_Reactor_Man_Colors_12
+  - first:
+      213: 8605290559989163685
+    second: Playable_Character_Reactor_Man_Colors_13
+  - first:
+      213: -166378122921548549
+    second: Playable_Character_Reactor_Man_Colors_14
+  - first:
+      213: -2416702737063514766
+    second: Playable_Character_Reactor_Man_Colors_15
+  - first:
+      213: 6243257622462743780
+    second: Playable_Character_Reactor_Man_Colors_16
+  - first:
+      213: -3110917024687894477
+    second: Playable_Character_Reactor_Man_Colors_17
+  - first:
+      213: 411937266283592959
+    second: Playable_Character_Reactor_Man_Colors_18
+  - first:
+      213: 3174552852543531287
+    second: Playable_Character_Reactor_Man_Colors_19
+  - first:
+      213: 7396448859571060390
+    second: Playable_Character_Reactor_Man_Colors_20
+  - first:
+      213: 3396856516153826021
+    second: Playable_Character_Reactor_Man_Colors_21
+  - first:
+      213: -1953371352178271221
+    second: Playable_Character_Reactor_Man_Colors_22
+  - first:
+      213: 5034685295286585421
+    second: Playable_Character_Reactor_Man_Colors_23
+  - first:
+      213: -7100289527705877541
+    second: Playable_Character_Reactor_Man_Colors_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 8
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Playable_Character_Reactor_Man_Colors_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 7
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cc63bb5ac2bab6e0800000000000000
+      internalID: -1820946517126320954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playable_Character_Reactor_Man_Colors_1
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 7
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1a5248e91bc53630800000000000000
+      internalID: 3906251563945056796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playable_Character_Reactor_Man_Colors_2
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 7
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee5023f9d0a686570800000000000000
+      internalID: 8460128506753451502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playable_Character_Reactor_Man_Colors_3
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 7
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c702c56626a1aaf70800000000000000
+      internalID: 9199194198784090236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playable_Character_Reactor_Man_Colors_4
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 7
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb105286a3c29d710800000000000000
+      internalID: 1718453362185535932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playable_Character_Reactor_Man_Colors_5
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 7
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3557905a77fdd3e00800000000000000
+      internalID: 1026221995073303891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playable_Character_Reactor_Man_Colors_6
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 7
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80aeb5ababe7f4b30800000000000000
+      internalID: 4273773911853492744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playable_Character_Reactor_Man_Colors_7
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 7
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b64f395bfcceb670800000000000000
+      internalID: 8556501721956697780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playable_Character_Reactor_Man_Colors_8
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 7
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd542f7c327c04e30800000000000000
+      internalID: 4485804185353340380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playable_Character_Reactor_Man_Colors_9
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 7
+        width: 35
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe1469386b8ee2790800000000000000
+      internalID: -7552843654464388625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playable_Character_Reactor_Man_Colors_10
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 7
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 490cbfa3a90b622e0800000000000000
+      internalID: -2150837595561803628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playable_Character_Reactor_Man_Colors_11
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 7
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e3be75b49d593190800000000000000
+      internalID: -7982245971255970839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playable_Character_Reactor_Man_Colors_12
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 7
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 222b55b16e8e88c30800000000000000
+      internalID: 4361992314107048482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playable_Character_Reactor_Man_Colors_13
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 7
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a62d29eb222c6770800000000000000
+      internalID: 8605290559989163685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playable_Character_Reactor_Man_Colors_14
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 7
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf46ddc8af7e0bdf0800000000000000
+      internalID: -166378122921548549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playable_Character_Reactor_Man_Colors_15
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 7
+        width: 35
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27d6d953aa5267ed0800000000000000
+      internalID: -2416702737063514766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playable_Character_Reactor_Man_Colors_16
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 7
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e4442cbab184a650800000000000000
+      internalID: 6243257622462743780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playable_Character_Reactor_Man_Colors_17
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 5
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33053c9c27dc3d4d0800000000000000
+      internalID: -3110917024687894477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playable_Character_Reactor_Man_Colors_18
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 5
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffc349ad2ce77b500800000000000000
+      internalID: 411937266283592959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playable_Character_Reactor_Man_Colors_19
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 8
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7196f88fff64e0c20800000000000000
+      internalID: 3174552852543531287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playable_Character_Reactor_Man_Colors_20
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 5
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ae731abc0775a660800000000000000
+      internalID: 7396448859571060390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playable_Character_Reactor_Man_Colors_21
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 5
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ead15e010f042f20800000000000000
+      internalID: 3396856516153826021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playable_Character_Reactor_Man_Colors_22
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 7
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0c5df6ca1b34e4e0800000000000000
+      internalID: -1953371352178271221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playable_Character_Reactor_Man_Colors_23
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 7
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d488075e99bced540800000000000000
+      internalID: 5034685295286585421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Playable_Character_Reactor_Man_Colors_24
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 7
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd34aa22b44b67d90800000000000000
+      internalID: -7100289527705877541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Playable_Character_Reactor_Man_Colors_0: -1820946517126320954
+      Playable_Character_Reactor_Man_Colors_1: 3906251563945056796
+      Playable_Character_Reactor_Man_Colors_10: -2150837595561803628
+      Playable_Character_Reactor_Man_Colors_11: -7982245971255970839
+      Playable_Character_Reactor_Man_Colors_12: 4361992314107048482
+      Playable_Character_Reactor_Man_Colors_13: 8605290559989163685
+      Playable_Character_Reactor_Man_Colors_14: -166378122921548549
+      Playable_Character_Reactor_Man_Colors_15: -2416702737063514766
+      Playable_Character_Reactor_Man_Colors_16: 6243257622462743780
+      Playable_Character_Reactor_Man_Colors_17: -3110917024687894477
+      Playable_Character_Reactor_Man_Colors_18: 411937266283592959
+      Playable_Character_Reactor_Man_Colors_19: 3174552852543531287
+      Playable_Character_Reactor_Man_Colors_2: 8460128506753451502
+      Playable_Character_Reactor_Man_Colors_20: 7396448859571060390
+      Playable_Character_Reactor_Man_Colors_21: 3396856516153826021
+      Playable_Character_Reactor_Man_Colors_22: -1953371352178271221
+      Playable_Character_Reactor_Man_Colors_23: 5034685295286585421
+      Playable_Character_Reactor_Man_Colors_24: -7100289527705877541
+      Playable_Character_Reactor_Man_Colors_3: 9199194198784090236
+      Playable_Character_Reactor_Man_Colors_4: 1718453362185535932
+      Playable_Character_Reactor_Man_Colors_5: 1026221995073303891
+      Playable_Character_Reactor_Man_Colors_6: 4273773911853492744
+      Playable_Character_Reactor_Man_Colors_7: 8556501721956697780
+      Playable_Character_Reactor_Man_Colors_8: 4485804185353340380
+      Playable_Character_Reactor_Man_Colors_9: -7552843654464388625
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

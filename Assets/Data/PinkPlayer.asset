@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebc0013dae53a434388413bf5e1db953, type: 3}
+  m_Name: PinkPlayer
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterData
+  playerName: 
+  description: 
+  player: {fileID: 0}
+  animatorController: {fileID: 9100000, guid: f552ea63029a2f643983c644faa1978e, type: 2}
+  hp: 0
+  maxHP: 0
+  damage: 0
+  speed: 0
