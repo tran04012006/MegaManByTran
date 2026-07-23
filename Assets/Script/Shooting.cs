@@ -6,15 +6,9 @@ public class Shooting : MonoBehaviour
     private bool isRight = false;
     public GameObject bullet;
     private Transform point;
-    
-    private void Start()
-    {
-    }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    public void shoot()
     {
-        if (other.gameObject.CompareTag("Bullet"))
-        {
             Debug.Log("da bi trung dan");
             //neu bi ban thi se ban nguoc lai
                 // lay 2 con cua gameobject ra
@@ -34,12 +28,7 @@ public class Shooting : MonoBehaviour
                 BulletController bc = newBullet.gameObject.GetComponent<BulletController>();
                 bc.setDirection(isRight);
             
-        }
-    }
-
-
-    private void Update()
-    {
         
     }
+
 }

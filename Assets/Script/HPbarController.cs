@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,7 +14,16 @@ public class HPbarController : MonoBehaviour
     void Start()
     {
         slider = GetComponent<Slider>();
+    }
+
+    private void OnEnable()
+    {
         propoller.HPEnemyChange += UpdateHP;
+    }
+
+    private void OnDisable()
+    {
+        propoller.HPEnemyChange -= UpdateHP;    
     }
 
     IEnumerator IsGoingToDie()
@@ -39,7 +49,8 @@ public class HPbarController : MonoBehaviour
         {
             slider.value += hp;
         }
-        while (slider.value <= 0.3)
+        
+        if (slider.value <= 0.3)
         {
             //cho hien tuong chop tat
             StartCoroutine(IsGoingToDie());

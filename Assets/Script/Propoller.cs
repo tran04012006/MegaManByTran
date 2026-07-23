@@ -12,6 +12,7 @@ public class Propoller : MonoBehaviour
         if (other.gameObject.CompareTag("Bullet"))
         {
             Debug.Log("bi ban");
+            //Destroy(gameObject);
             takeDamage();
         }
     }
@@ -19,8 +20,8 @@ public class Propoller : MonoBehaviour
     public void takeDamage()
     {
         Debug.Log("tru 0.2f mau cua propoller");
-        blood = blood - 0.2f;
-        HPEnemyChange?.Invoke(-0.2f);
+        blood = blood - 0.5f;
+        HPEnemyChange?.Invoke(-0.5f);
         //HPbarController
         if (blood <= 0)
         {

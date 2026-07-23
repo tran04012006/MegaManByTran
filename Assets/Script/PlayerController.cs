@@ -23,7 +23,9 @@ public class PlayerController : MonoBehaviour
     public GameObject bulletPrefab;
     //khai bao su kien thong bao hp thay doi
     public Action<int> onHpChange;
+
     
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -31,9 +33,9 @@ public class PlayerController : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
         h = GetComponent<Hurt>();
-        sr.sprite = characterData.player;
-        anim.runtimeAnimatorController = characterData.animatorController;
-        GameManager.Instance.heath = characterData.hp;
+        //sr.sprite = characterData.player;
+        //anim.runtimeAnimatorController = characterData.animatorController;
+        //GameManager.Instance.heath = characterData.hp;
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -51,7 +53,7 @@ public class PlayerController : MonoBehaviour
             isHurt = true;
             h.getHurt();
         }
-
+        
         
     }
 
@@ -80,6 +82,8 @@ public class PlayerController : MonoBehaviour
             isClimb = false;
         }
     }
+
+   
 
     // Update is called once per frame
     void Update()

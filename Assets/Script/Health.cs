@@ -31,12 +31,15 @@ public class Health : MonoBehaviour
             this.hp = 0;
         if (this.hp >= max)
             this.hp = max;
+        GameManager.Instance.heath = this.hp;
         // neu giam hp thi truyen vao -1
         //neu tang hp thi truyen vao 1
         //thay doi sprite
         currentHPSprite++;
         if (currentHPSprite >= max)
             currentHPSprite = max;
+        if (currentHPSprite <= 0)
+            currentHPSprite = 0;
         sr.sprite = healthPrites[currentHPSprite]; 
     }
     
