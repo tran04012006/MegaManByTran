@@ -34,9 +34,10 @@ public class HPbarController : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
     }
     
-    void UpdateHP(float hp)
+    public void UpdateHP(float hp)
     {
         //cap nhat giao dien cho hp hien tai
+        slider.value += hp;
         if (slider.value > 17)
         {
             slider.value = 17;
@@ -45,16 +46,17 @@ public class HPbarController : MonoBehaviour
         {
             slider.value = 0;
         }
-        else
-        {
-            slider.value += hp;
-        }
         
         if (slider.value <= 0.3)
         {
             //cho hien tuong chop tat
             StartCoroutine(IsGoingToDie());
         }
+    }
+
+    public void fullHP()
+    {
+        slider.value = GameManager.Instance.maxHP;
     }
 
     // Update is called once per frame

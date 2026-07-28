@@ -10,6 +10,7 @@ TagManager:
   - Bullet
   - Point
   - CheckPoint
+  - Item
   layers:
   - Default
   - TransparentFX

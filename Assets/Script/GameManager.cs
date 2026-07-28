@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
     public int score = 0;
 
     public int heath = 17;
+
+    public int maxHP = 17;
     //score: diem player dat duoc sau moi lan giet duoc yeu quai
     public bool isGameOver = false;
     public Text scoreCamera;
@@ -32,24 +34,20 @@ public class GameManager : MonoBehaviour
     
     void Awake()
     {
+        Instance = this;
+        /*
         //DontDestroyOnLoad(gameObject);
         if (Instance == null)
         {
-            Instance = this;
+            
         }
         else
         {
             Destroy(gameObject);
         }
         //cap nhat score ban dau la 0
+        */
     }
-    
-    /*
-    private void Start()
-    {
-        ScoreUpdate scoreUI = FindFirstObjectByType<ScoreUpdate>();
-    }
-    */
     
     private void OnEnable()
     {
@@ -85,6 +83,7 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("onSceneLoad");
         //unity tu goi class nay
+        
         //lay ra noi chua file json
         string path =  Application.persistentDataPath + "/SaveData.json";
         if (File.Exists(path) == true)
@@ -132,6 +131,13 @@ public class GameManager : MonoBehaviour
         this.score += score;
         //thong bao diem thay doi
         onScoreChange?.Invoke(this.score);
+    }
+
+    public void minusScore(int score)
+    {
+        this.score -= score;
+        if (this.score <= 0)
+            gameOver();
     }
 
     public void gameOver()

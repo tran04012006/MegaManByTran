@@ -23,7 +23,7 @@ public class Health : MonoBehaviour
     }
     //dang ki su kien action tang giam mau tu GameManager
     
-    private void changeHP(int hp)
+    public void changeHP(int hp)
     {
         h.getHurt();
         this.hp = this.hp + hp;

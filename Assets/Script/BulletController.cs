@@ -14,6 +14,10 @@ public class BulletController : MonoBehaviour
     private bool isRight = false;
 
     private SpriteRenderer sr;
+
+    public float damage;
+    public int score;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -26,6 +30,7 @@ public class BulletController : MonoBehaviour
     {
         //cai nay se quyet dinh huong cua nhan vat
         this.isRight = isRight;
+        
     }
 
    
@@ -35,35 +40,35 @@ public class BulletController : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy"))
         {
             Debug.Log("dung enemy");
-            GameManager.Instance.addScore(10);
+            GameManager.Instance.addScore(score);
             // hieu ung dung nhan vat
             Destroy(gameObject);
         }
 
-        /*
         if (other.gameObject.CompareTag("Player"))
         {
-            StartCoroutine(Hurt());
-            //GameManager.Instance.takeDamage(10);
+            //GameManager.Instance.
         }
-        */
     }
     
-
     // Update is called once per frame
     void Update()
     {
+        
         //cau lenh di chuyen nhan vat kha hay
         Debug.Log(isRight);
         if (isRight == true) //di ve ben phai
         {
             sr.flipX = true;
+            //dua dan di sang ben phai
             transform.Translate(Vector2.right * speed * Time.deltaTime);
         }
         else if (isRight == false)
         {
             sr.flipX = false;
+            //dua dan di sang ben trai
             transform.Translate(Vector2.left * speed * Time.deltaTime);
         }
+        
     }
 }

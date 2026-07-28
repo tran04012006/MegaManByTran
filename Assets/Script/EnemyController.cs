@@ -19,6 +19,7 @@ public class EnemyController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        //bi tan cong
         if (other.gameObject.CompareTag("Bullet"))
         {
             h.getHurt();

@@ -23,9 +23,7 @@ public class PlayerController : MonoBehaviour
     public GameObject bulletPrefab;
     //khai bao su kien thong bao hp thay doi
     public Action<int> onHpChange;
-
     
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -48,7 +46,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy"))
         {
             //neu player dung vao enemy
-            //vat bi tru hp
+            //player bi tru hp
             onHpChange?.Invoke(-1);
             isHurt = true;
             h.getHurt();
