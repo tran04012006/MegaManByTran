@@ -28,10 +28,8 @@ public class GameManager : MonoBehaviour
     
     //khai bao action, bao khi diem thay doi
     public Action<int> onScoreChange;
-
-    //khai bao action khi hp thay doi 
     public Action<int> onHpChange;
-    
+
     void Awake()
     {
         Instance = this;
@@ -58,6 +56,19 @@ public class GameManager : MonoBehaviour
     private void OnDisable()
     {
         SceneManager.sceneLoaded -= onSceneLoad;
+    }
+    
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            //neu player dung vao enemy
+            //player bi tru hp
+            //co hanh dong bi hurt
+            onHpChange?.Invoke(-1);
+        }
+        
+        
     }
 
     public void ReachCheckPoint(int checkPoint)

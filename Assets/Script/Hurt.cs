@@ -6,6 +6,17 @@ using Vector2 = UnityEngine.Vector2;
 public class Hurt : MonoBehaviour
 {
     private SpriteRenderer sr;
+
+    private void OnEnable()
+    {
+        GameManager.Instance.onHpChange += getHurt;
+    }
+
+    private void OnDisable()
+    {
+        GameManager.Instance.onHpChange -= getHurt;
+    }
+
     private void Start()
     {
         sr = GetComponent<SpriteRenderer>();
@@ -22,7 +33,7 @@ public class Hurt : MonoBehaviour
         sr.enabled = true; //hien
     }
     
-    public void getHurt()
+    public void getHurt(int delete)
     {
         StartCoroutine(Hurt_interface());
     }

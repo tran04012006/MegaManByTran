@@ -22,7 +22,7 @@ public class EnemyController : MonoBehaviour
         //bi tan cong
         if (other.gameObject.CompareTag("Bullet"))
         {
-            h.getHurt();
+            h.getHurt(-1);
         }
     }
 

@@ -47,7 +47,8 @@ public class BulletController : MonoBehaviour
 
         if (other.gameObject.CompareTag("Player"))
         {
-            //GameManager.Instance.
+            //hp cua player bi tru diem
+            GameManager.Instance.onHpChange.Invoke(-1);
         }
     }
     

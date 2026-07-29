@@ -22,7 +22,6 @@ public class PlayerController : MonoBehaviour
     private Transform firePoint; //quyet dinh vi tri cua firePoint
     public GameObject bulletPrefab;
     //khai bao su kien thong bao hp thay doi
-    public Action<int> onHpChange;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -43,16 +42,6 @@ public class PlayerController : MonoBehaviour
             isGround = true;//dang cham dat
             
         }
-        if (other.gameObject.CompareTag("Enemy"))
-        {
-            //neu player dung vao enemy
-            //player bi tru hp
-            onHpChange?.Invoke(-1);
-            isHurt = true;
-            h.getHurt();
-        }
-        
-        
     }
 
     private void OnCollisionStay2D(Collision2D other)

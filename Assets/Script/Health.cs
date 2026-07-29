@@ -7,6 +7,7 @@ public class Health : MonoBehaviour
     private SpriteRenderer sr;
     private int hp;
     public PlayerController pc;
+
     private int currentHPSprite = 0;
     public int max = 17;
     private Hurt h;
@@ -16,16 +17,23 @@ public class Health : MonoBehaviour
         hp = max;
         sr = GetComponent<SpriteRenderer>();
         sr.sprite = healthPrites[currentHPSprite]; //ban dau thi sprite la full mau
-        pc.onHpChange += changeHP;
         h = GetComponent<Hurt>();
         //su kien 1: thay doi so hp + thay doi sprite
 
     }
-    //dang ki su kien action tang giam mau tu GameManager
-    
+
+    private void OnEnable()
+    {
+        GameManager.Instance.onHpChange += changeHP;
+    }
+
+    private void OnDisable()
+    {
+        GameManager.Instance.onHpChange -= changeHP;
+    }
+
     public void changeHP(int hp)
     {
-        h.getHurt();
         this.hp = this.hp + hp;
         if (this.hp <= 0)
             this.hp = 0;
