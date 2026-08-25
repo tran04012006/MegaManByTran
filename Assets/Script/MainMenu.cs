@@ -9,12 +9,18 @@ public class MainMenu : MonoBehaviour
 
     public GameObject story;
     public GameObject closeStory;
+    
+    public AudioClip background;
+    public AudioClip press;
 
     private void Start()
     {
         closeStory.SetActive(false); //ban dau thi tat nut nay
         story.SetActive(false); //ban dau thi xoa story
         _audioSource = GetComponent<AudioSource>();
+        _audioSource.clip = background;
+        _audioSource.loop = true;
+        _audioSource.Play();
     }
 
     // khai bao story xong thi ko can getcomponent, vi ta chi can thao tac tren GameObject
@@ -25,26 +31,27 @@ public class MainMenu : MonoBehaviour
     {
         Debug.Log("Play");
         //truyen vao ten cua scene
-        SceneManager.LoadScene("SampleScene");
+        _audioSource.PlayOneShot(press);
+        SceneManager.LoadScene("Choose");
     }
 
     public void Exit()
     {        
-        _audioSource.Play();
+        _audioSource.PlayOneShot(press);        
         Debug.Log("Exit");
 
     }
 
     public void Setting()
     {
-        Debug.Log("Setting");
-        _audioSource.Play();
+        _audioSource.PlayOneShot(press);        
+        SceneManager.LoadScene("Setting");
         //chuyen sang scene Setting
     }
     
     public void Story()
     {
-        _audioSource.Play();
+        _audioSource.PlayOneShot(press);        
         Debug.Log("Story");
         //tim trong tat ca GameObject dang active trong scene, cai nao co tag la story
         //thi gan cai do vao story
@@ -59,7 +66,7 @@ public class MainMenu : MonoBehaviour
 
     public void CloseStory()
     {
-        _audioSource.Play();
+        _audioSource.PlayOneShot(press);
         if (story.activeSelf == true)
         {
             //neu story dang active (co dau tick) thi dat no lai thanh false
@@ -67,6 +74,19 @@ public class MainMenu : MonoBehaviour
             closeStory.SetActive(false);
 
         }
+    }
+
+	public void ReplayButoon()
+    {
+        _audioSource.PlayOneShot(press);
+        string scene = GameManager.Instance.currentScene;
+        SceneManager.LoadScene(scene);
+    }
+
+    public void Menu()
+    {
+        _audioSource.PlayOneShot(press);
+        SceneManager.LoadScene("MainMenu");
     }
     
 }

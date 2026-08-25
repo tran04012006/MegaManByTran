@@ -11,6 +11,14 @@ TagManager:
   - Point
   - CheckPoint
   - Item
+  - BulletEnemy
+  - FxTemporaire
+  - River
+  - Meet Boss
+  - MeetBoss
+  - ChangeCamera
+  - ClimbEndPoint
+  - Square
   layers:
   - Default
   - TransparentFX
@@ -25,7 +33,7 @@ TagManager:
   - Ground
   - Item
   - Trap
-  - 
+  - River
   - 
   - 
   - 

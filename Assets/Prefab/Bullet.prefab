@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 6536805993388837837}
   - component: {fileID: 133326591473030926}
   - component: {fileID: 8843000566236910288}
-  - component: {fileID: 6755322919378314806}
   - component: {fileID: -772709256845597858}
+  - component: {fileID: -3942176708193110811}
   m_Layer: 6
   m_Name: Bullet
   m_TagString: Bullet
@@ -116,20 +116,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &6755322919378314806
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8264760319671839443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22590d2c31e82b74a8325a8c9355f4b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BulletController
-  speed: 10
-  lifeTime: 1
 --- !u!61 &-772709256845597858
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -176,3 +162,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2, y: 1.5}
   m_EdgeRadius: 0
+--- !u!114 &-3942176708193110811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8264760319671839443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 373e85e064634106902a344dcc8500df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletController
+  speed: 10
+  lifeTime: 3
+  damage: 0
+  score: 0
+  particleEffect: {fileID: 2574334464861392600, guid: c874729e19c0a7541bed0933b2407bc2, type: 3}

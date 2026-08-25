@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee78a3cc8be84f14daf1526f1a708e4e, type: 3}
   m_Name: Propoller
   m_EditorClassIdentifier: Assembly-CSharp::EnemyItem
-  damage: 10
+  damage: 1
   hp: 10

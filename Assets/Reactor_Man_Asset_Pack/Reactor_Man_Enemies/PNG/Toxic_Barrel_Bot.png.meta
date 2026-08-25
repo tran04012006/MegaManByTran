@@ -156,12 +156,12 @@ TextureImporter:
       name: Toxic_Barrel_Bot_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 0
         y: 0
-        width: 20
-        height: 25
+        width: 24
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -178,12 +178,12 @@ TextureImporter:
       name: Toxic_Barrel_Bot_1
       rect:
         serializedVersion: 2
-        x: 26
+        x: 24
         y: 0
-        width: 23
-        height: 25
+        width: 24
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -200,12 +200,12 @@ TextureImporter:
       name: Toxic_Barrel_Bot_2
       rect:
         serializedVersion: 2
-        x: 47
+        x: 48
         y: 0
-        width: 26
-        height: 25
+        width: 24
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -224,10 +224,10 @@ TextureImporter:
         serializedVersion: 2
         x: 72
         y: 0
-        width: 49
-        height: 25
+        width: 24
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -244,12 +244,12 @@ TextureImporter:
       name: Toxic_Barrel_Bot_4
       rect:
         serializedVersion: 2
-        x: 125
+        x: 96
         y: 0
-        width: 20
-        height: 27
+        width: 24
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -266,12 +266,12 @@ TextureImporter:
       name: Toxic_Barrel_Bot_5
       rect:
         serializedVersion: 2
-        x: 149
+        x: 120
         y: 0
-        width: 20
-        height: 32
+        width: 24
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -288,12 +288,12 @@ TextureImporter:
       name: Toxic_Barrel_Bot_6
       rect:
         serializedVersion: 2
-        x: 173
+        x: 144
         y: 0
-        width: 20
-        height: 43
+        width: 24
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -310,12 +310,12 @@ TextureImporter:
       name: Toxic_Barrel_Bot_7
       rect:
         serializedVersion: 2
-        x: 196
+        x: 168
         y: 0
-        width: 21
-        height: 47
+        width: 24
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -332,12 +332,12 @@ TextureImporter:
       name: Toxic_Barrel_Bot_8
       rect:
         serializedVersion: 2
-        x: 219
+        x: 192
         y: 0
-        width: 22
+        width: 24
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -354,12 +354,12 @@ TextureImporter:
       name: Toxic_Barrel_Bot_9
       rect:
         serializedVersion: 2
-        x: 240
+        x: 216
         y: 0
         width: 24
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -372,11 +372,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Toxic_Barrel_Bot_10
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a756080838bce684ab4e473a3a8a76a7
+      internalID: 1021536056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1d2159b847c3499448b51747bb927f47
     internalID: 0
     vertices: []
     indices: 
@@ -384,10 +406,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":11.0,"y":1.0},"gridSpriteSize":{"x":24.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Toxic_Barrel_Bot_0: -6598184740614618817
       Toxic_Barrel_Bot_1: 3931944812812999772
+      Toxic_Barrel_Bot_10: 1021536056
       Toxic_Barrel_Bot_2: -5376965389347745983
       Toxic_Barrel_Bot_3: -5536201697344119648
       Toxic_Barrel_Bot_4: 2802688736881238079

@@ -10,16 +10,19 @@ public class GameManager : MonoBehaviour
 { 
     public static GameManager Instance { get; private set; }
     public int numberOfScene = 0;
+    public string currentScene;
     public string[] level = new[]
     {
-        "level01", 
-        "level02",
-        "level03"
+        "Level01", 
+        "Level02",
+        "Level03"
     };
-    public int score = 0;
+    public int score  {
+        get;
+        set;
+    }
 
-    public int heath = 17;
-
+    public float hp = 17;
     public int maxHP = 17;
     //score: diem player dat duoc sau moi lan giet duoc yeu quai
     public bool isGameOver = false;
@@ -28,23 +31,23 @@ public class GameManager : MonoBehaviour
     
     //khai bao action, bao khi diem thay doi
     public Action<int> onScoreChange;
-    public Action<int> onHpChange;
 
+    private PlayerController playerController;
+
+    
     void Awake()
     {
-        Instance = this;
-        /*
-        //DontDestroyOnLoad(gameObject);
-        if (Instance == null)
-        {
-            
-        }
-        else
+        //neu co GameManager roi
+        if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
+            return;
         }
-        //cap nhat score ban dau la 0
-        */
+        
+        //neu chua co
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+        score = 0;
     }
     
     private void OnEnable()
@@ -57,37 +60,18 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.sceneLoaded -= onSceneLoad;
     }
-    
-    private void OnCollisionEnter2D(Collision2D other)
+
+    private void Update()
     {
-        if (other.gameObject.CompareTag("Enemy"))
-        {
-            //neu player dung vao enemy
-            //player bi tru hp
-            //co hanh dong bi hurt
-            onHpChange?.Invoke(-1);
-        }
-        
-        
+        Debug.Log("numberOfScene: " + numberOfScene);
     }
 
     public void ReachCheckPoint(int checkPoint)
     {
+        SoundManager.Instance.currentSound = SoundManager.SoundID.ReachCheckpoint;
         //luu lai du lieu
-        SaveCheckPoint(level[checkPoint], checkPoint, heath, this.score);
+        SaveCheckPoint(level[checkPoint], checkPoint, hp, this.score);
         //chuan bi chuyen sang scene tiep theo
-        if (checkPoint <= level.Length - 1)
-        {
-            //chuyen sang scene tiep theo 
-            checkPoint++;
-            SceneManager.LoadScene(level[checkPoint]);
-        }
-        else
-        {
-            //neu het man choi
-            Debug.Log("Da hoan thanh game");
-        }
-        //cap nhat data trong scene moi
     }
 
     void onSceneLoad(Scene scene, LoadSceneMode loadSceneMode)
@@ -121,12 +105,12 @@ public class GameManager : MonoBehaviour
         }
     }
     
-    public void SaveCheckPoint(string sceneName, int checkPoint, int health, int score)
+    public void SaveCheckPoint(string sceneName, int checkPoint, float hp, int score)
     {
        SaveData saveData = new SaveData();
        saveData.sceneName = sceneName;
        saveData.checkPoint = checkPoint;
-       saveData.health = health;
+       saveData.health = hp;
        saveData.score = score;
        string json = JsonUtility.ToJson(saveData);
        string path = Application.persistentDataPath + "/SaveData.json";
@@ -148,6 +132,9 @@ public class GameManager : MonoBehaviour
     {
         this.score -= score;
         if (this.score <= 0)
+            this.score = 0;
+        onScoreChange?.Invoke(this.score);
+        if (this.score <= 0)
             gameOver();
     }
 
@@ -156,5 +143,23 @@ public class GameManager : MonoBehaviour
         isGameOver = true;
         //instantiate gameover prefab hoac dung game
     }
-    
+
+    public void Next()
+    {
+        //cap nhat numberOfScene
+        //Debug.Log("level.Length: " +  level.Length);
+        
+        //Debug.Log("numberOfScene tham so: " +  numberOfScene);
+        if (numberOfScene < level.Length - 1)
+        {
+            numberOfScene = numberOfScene + 1;
+            Debug.Log("cong 1 vao scene, scene = " + numberOfScene );
+            string tmp = level[numberOfScene];
+            SceneManager.LoadScene(tmp);
+        }
+        else
+        {
+            //Da hoan thanh game
+        }
+    }
 }

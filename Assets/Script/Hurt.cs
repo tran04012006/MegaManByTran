@@ -7,16 +7,6 @@ public class Hurt : MonoBehaviour
 {
     private SpriteRenderer sr;
 
-    private void OnEnable()
-    {
-        GameManager.Instance.onHpChange += getHurt;
-    }
-
-    private void OnDisable()
-    {
-        GameManager.Instance.onHpChange -= getHurt;
-    }
-
     private void Start()
     {
         sr = GetComponent<SpriteRenderer>();
@@ -33,7 +23,7 @@ public class Hurt : MonoBehaviour
         sr.enabled = true; //hien
     }
     
-    public void getHurt(int delete)
+    public void getHurt()
     {
         StartCoroutine(Hurt_interface());
     }

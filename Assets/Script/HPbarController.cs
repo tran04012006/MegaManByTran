@@ -7,23 +7,25 @@ public class HPbarController : MonoBehaviour
 {
     private Slider slider;
 
-    public Propoller propoller;
+    public EnemyController enemyController;
 
     public GameObject fill;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         slider = GetComponent<Slider>();
+        EnemyController enemyController = GetComponent<EnemyController>();
+        //slider.maxValue = enemyController.hp;
     }
 
     private void OnEnable()
     {
-        propoller.HPEnemyChange += UpdateHP;
+        enemyController.HPEnemyChange += UpdateHP;
     }
 
     private void OnDisable()
     {
-        propoller.HPEnemyChange -= UpdateHP;    
+        enemyController.HPEnemyChange -= UpdateHP;    
     }
 
     IEnumerator IsGoingToDie()
@@ -34,19 +36,21 @@ public class HPbarController : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
     }
     
-    public void UpdateHP(float hp)
+    public void UpdateHP(float currentHP)
     {
         //cap nhat giao dien cho hp hien tai
-        slider.value += hp;
-        if (slider.value > 17)
+        slider.value = currentHP;
+        //Debug.Log("slider value: " + slider.value);
+        if (slider.value > slider.maxValue)
         {
-            slider.value = 17;
+            slider.value = slider.maxValue;
         }
-        else if (slider.value < 0)
+        else if (slider.value < slider.minValue)
         {
-            slider.value = 0;
+            slider.value = slider.minValue;
         }
         
+        //khi sap can mau
         if (slider.value <= 0.3)
         {
             //cho hien tuong chop tat
