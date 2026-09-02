@@ -49,7 +49,7 @@ public class EnemyController : MonoBehaviour
         {
             //enemy dung vao player
             PlayerController playerController = other.gameObject.GetComponent<PlayerController>();
-            playerController.isAttack(damage);
+            //playerController.isAttack(damage);
         }
     }
     

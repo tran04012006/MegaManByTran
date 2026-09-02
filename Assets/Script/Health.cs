@@ -48,14 +48,14 @@ public class Health : MonoBehaviour
         // neu giam hp thi truyen vao -1
         //neu tang hp thi truyen vao 1
         //thay doi sprite
-        currentHPSprite += hp;
+        currentHPSprite++;
         if (currentHPSprite >= max)
         {
             //luc nay thi player da chet
             currentHPSprite = max - 1;
             if (playerDie == false)
             {
-                pc.isDead(); //bao la player da chet
+                //pc.isDead(); //bao la player da chet
                 playerDie = true;
             }
         }
