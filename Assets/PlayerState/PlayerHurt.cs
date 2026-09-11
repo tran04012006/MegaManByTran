@@ -5,7 +5,7 @@ public class PlayerHurt : IPlayerState
     private PlayerController player;
     private Animator _animator;
     private float timer;
-    private float duration = 0.5f;
+    private float duration = 0.4f;
 
     //constructure
     public PlayerHurt(PlayerController player)
@@ -24,6 +24,21 @@ public class PlayerHurt : IPlayerState
 
     public void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            player.ChangeState(player.playerShoot);
+        }
+        
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            player.ChangeState(player.playerJump);
+        }
+        
+        if (player.moveX == 0)
+        {
+            player.ChangeState(player.playerRun);
+        } 
+        
         timer += Time.deltaTime;
         if (timer >= duration)
         {
@@ -36,6 +51,8 @@ public class PlayerHurt : IPlayerState
                 player.ChangeState(player.playerRun);
             }
         }
+        
+        
     }
 
     public void Exit()

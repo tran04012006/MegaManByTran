@@ -34,6 +34,16 @@ public class PlayerJump : IPlayerState
                 player.ChangeState(player.playerRun);
             }
         }
+        
+        if (player.dead == true)
+        {
+            player.ChangeState(player.playerDie);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            player.ChangeState(player.playerJumpShoot);
+        }
     }
 
     public void Exit()

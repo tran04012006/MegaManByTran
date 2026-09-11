@@ -27,6 +27,11 @@ public class PlayerShoot : IPlayerState
     public void Update()
     {
         Debug.Log("chay " + this);
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            player.ChangeState(player.playerJump);
+        }
+        
         timer += Time.deltaTime;
         if (timer >= duration)
         {
@@ -39,7 +44,14 @@ public class PlayerShoot : IPlayerState
             {
                 player.ChangeState(player.playerRun);
             }
+            
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                player.ChangeState(player.playerJumpShoot);
+            }
         }
+
+        
     }
 
     public void Exit()

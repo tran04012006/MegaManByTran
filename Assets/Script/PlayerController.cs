@@ -12,7 +12,7 @@ using UnityEngine.SceneManagement;
         Climb_Idle = 4, 
         Shoot = 5, +////
         Run = 1, +/////
-        Die = 6,
+        Die = 6, //////
         Crouch = 7,
         Climb_Move = 9,//////
         Climb_End_Point = 10, /////
@@ -24,13 +24,14 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+    
     [Header("Movement")]
     public float moveX, moveY;
     public float speed = 10f;
     public float swimSpeed = 4f;
     public float jumpForce = 4f;
     public float climSpeed = 10f;
-
+    
     public Rigidbody2D rb;
     private SpriteRenderer sr;
     private Animator anim;
@@ -45,13 +46,16 @@ public class PlayerController : MonoBehaviour
     private IPlayerState currentState;
     
     public bool isClimb = false;
-    private bool dead = false;
+    public bool dead = false;
     public Hurt h;
     private bool isHurt = false;
     public Action<float> onHpChange;
     public bool isGround = true;
     public bool isMoving = false;
     public bool isClimbEnd = false;
+    
+    [Header("Sound")]
+    public bool playerDieSound = false;
 
 
     [Header("Effect")]
@@ -62,7 +66,7 @@ public class PlayerController : MonoBehaviour
     
     [Header("Boss")]
     private NuclearMonkeyController nuclearMonkeyController;
-
+    public bool nuclearMonkeyAppear = false;
 
     [Header("Camera")]
     public Transform cameraPos;
@@ -82,6 +86,7 @@ public class PlayerController : MonoBehaviour
     public PlayerHurt playerHurt;
     public ClimbEndPoint climbEndPoint;
     public PlayerClimbShoot playerClimbShoot;
+    public PlayerDie playerDie;
 
 
 
@@ -96,22 +101,26 @@ public class PlayerController : MonoBehaviour
         playerHurt = new PlayerHurt(this);
         climbEndPoint = new ClimbEndPoint(this);
         playerClimbShoot = new PlayerClimbShoot(this);
+        playerDie = new PlayerDie(this);
 
         currentState = _playerIdle;
         
         sr = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        
+        camera = GetComponentInChildren<Camera>();
+        nuclearMonkeyController = FindAnyObjectByType<NuclearMonkeyController>(FindObjectsInactive.Include);
+
+        h = GetComponent<Hurt>();
+
     }
 
     private void Update()
     {
         Movement();
         Direction();
-
-        Debug.Log("isClimb: " + isClimb);
-        
-
+        /*
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (isGround == true)
@@ -128,7 +137,7 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
-        
+        */
         if (moveX == 0)
         {
             isMoving = false;
@@ -137,7 +146,8 @@ public class PlayerController : MonoBehaviour
         {
             isMoving = true;
         }
-
+        
+        /*
         if (Input.GetKeyDown(KeyCode.W))
         {
             if (isClimb == true)
@@ -152,9 +162,14 @@ public class PlayerController : MonoBehaviour
                 ChangeState(playerJump);
             }
         }
-        
+        */
         Debug.Log("currentState: " + currentState);
         currentState.Update();
+
+        if (changeCamera == true)
+        {
+            ChangeCamera();
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -162,20 +177,27 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("isGround"))
         {
             isGround = true;
+            Instantiate(foot, down.transform.position, Quaternion.identity);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("BulletEnemy"))
-        {
-            TakeDamage();
-        }
 
         if (other.gameObject.CompareTag("ClimbEndPoint"))
         {
-            Debug.Log("Dung vao ClimbEndPoint!!!!!!!!!!!!!!!!!!! ");
             isClimbEnd = true;
+        }
+        
+        if (other.gameObject.CompareTag("ChangeCamera"))
+        {
+            changeCamera = true;
+        }
+        
+        if (other.gameObject.CompareTag("isGround"))
+        {
+            isGround = true;
+            Instantiate(foot, down.transform.position, Quaternion.identity);
         }
     }
 
@@ -184,12 +206,8 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("isGround"))
         {
             isGround = false;
+            Instantiate(foot, down.transform.position, Quaternion.identity);
         }  
-        
-        if (other.gameObject.CompareTag("Enemy"))
-        {
-            TakeDamage();
-        } 
     }
 
     void Movement()
@@ -215,9 +233,9 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void ChangeState(IPlayerState currentState)
+    public void ChangeState(IPlayerState newState)
     {
-        this.currentState = currentState;
+        currentState = newState;
         currentState.Enter();
     }
 
@@ -248,7 +266,7 @@ public class PlayerController : MonoBehaviour
         bulletController.setDirection(isRight);
     }
 
-    void Jump()
+    public void Jump()
     {
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
     }
@@ -270,15 +288,67 @@ public class PlayerController : MonoBehaviour
         anim.SetInteger("Status", 4);
     }
 
-    void TakeDamage()
+    public void TakeDamage(float damage)
     {
         ChangeState(playerHurt);
-        onHpChange?.Invoke(-1);
+        onHpChange?.Invoke(-damage);
+        h.getHurt();
+        GameManager.Instance.hp -= damage;
+        SoundManager.Instance.currentSound = SoundManager.SoundID.PlayerHurt;
     }
 
     public void ExitClimb()
     {
         rb.bodyType = RigidbodyType2D.Dynamic;
         ChangeState(playerJump);
+    }
+
+    void ChangeCamera()
+    {
+        float speedCamera = 5f;
+        camera.transform.position = Vector3.MoveTowards(
+            camera.transform.position,
+            cameraPos.position,
+            speedCamera * Time.deltaTime);
+
+        if (camera.transform.position == cameraPos.position)
+        {
+            changeCamera = false;
+        }
+            
+        if (Vector3.Distance(cameraPos.position, camera.transform.position) <= 1f)
+        {
+            camera.transform.SetParent(null);
+            //camera.transform.SetParent(null);
+            if (nuclearMonkeyAppear == false)
+            {
+                nuclearMonkeyController.Appear();
+                nuclearMonkeyAppear = true;
+            }
+        }
+    }
+
+    public void Dead()
+    {
+        dead = true;
+        
+        if (dead == true)
+        {
+            if (playerDieSound == false)
+            {
+                Debug.Log("phat nhac player da chet");
+                StartCoroutine(GameOver());
+                playerDieSound = true;
+            }
+        }
+        
+    }
+    
+    IEnumerator GameOver()
+    {
+        SoundManager.Instance.currentSound = SoundManager.SoundID.GameOver;
+        yield return new WaitForSeconds(1f);
+        GameManager.Instance.currentScene = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene("Replay");
     }
 }

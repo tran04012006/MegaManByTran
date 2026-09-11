@@ -5,7 +5,7 @@ public class PlayerJumpShoot : IPlayerState
     private PlayerController player;
     private Animator _animator;
     private float timer;
-    private float duration = 2f;
+    private float duration = 0.2f;
 
     //constructure
     public PlayerJumpShoot(PlayerController player)
@@ -17,25 +17,34 @@ public class PlayerJumpShoot : IPlayerState
     public void Enter()
     {
         Debug.Log("status la nhay, luc nay isGround = " + player.isGround);
-        _animator.SetInteger("Status", 12);
         player.ShootBullet();
+        _animator.SetInteger("Status", 12);
+        timer = 0;
     }
 
     public void Update()
     {
-        if (player.isGround == true)
+        timer += Time.deltaTime;
+        
+        if (timer >= duration)
         {
-            Debug.Log("status la ko nhay nua");
-            if (player.moveX == 0)
+            if (player.isGround == true)
             {
-                player.ChangeState(player._playerIdle);
+                Debug.Log("status la ko nhay nua");
+                if (player.moveX == 0)
+                {
+                    player.ChangeState(player._playerIdle);
+                }
+                else
+                {
+                    player.ChangeState(player.playerRun);
+                }
             }
             else
             {
-                player.ChangeState(player.playerRun);
+                player.ChangeState(player.playerJump);
             }
         }
-        
     }
 
     public void Exit()

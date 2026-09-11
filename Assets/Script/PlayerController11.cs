@@ -95,13 +95,7 @@ public class PlayerController11 : MonoBehaviour
         onHpChange?.Invoke(damage);
         //action hurt
         h.getHurt();
-        //neu cap nhat currentState ngay bay gio thi currenState sau do se ngay lap tuc doi sang
-        //Idle (do anh huong cua nhung code trong update)
-        //--> ko hien thi animation hurt
-        //isHurt = false;
-        //them coroutine vao de kip thay trnag thai Hurt
-
-        //SoundManager.Instance.currentSound = SoundManager.SoundID.Hurt;
+        
         SoundManager.Instance.currentSound = SoundManager.SoundID.PlayerHurt;
         
     }

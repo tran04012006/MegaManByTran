@@ -13,7 +13,7 @@ public class EnemyController : MonoBehaviour
     public GameObject particleEffect;
     public EnemyItem enemyData;
     private float damage;
-    private float hp;
+    public float hp;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -31,7 +31,6 @@ public class EnemyController : MonoBehaviour
         //bi tan cong
         if (other.gameObject.CompareTag("Bullet"))
         {
-            Debug.Log("monkey bi trung dan");
             h.getHurt();
             TakeDamage();
         }
@@ -49,15 +48,15 @@ public class EnemyController : MonoBehaviour
         {
             //enemy dung vao player
             PlayerController playerController = other.gameObject.GetComponent<PlayerController>();
-            //playerController.isAttack(damage);
+            playerController.TakeDamage(damage);
         }
     }
     
     public void TakeDamage()
     {
-        Debug.Log("tru mau");
         //thay doi bar mau
         hp = hp - damageOfPlayer;
+        Debug.Log("hp: !!!!!!!!!!!!!!!!!!!!!!!!! " + hp);
         HPEnemyChange?.Invoke(hp);
         //HPbarController
         if (hp <= 0)

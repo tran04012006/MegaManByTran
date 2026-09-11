@@ -25,6 +25,38 @@ public class PlayerRun : IPlayerState
         {
             player.ChangeState(player._playerIdle);
         }
+        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (player.isGround == true)
+            {
+                player.ChangeState(player.playerShoot);
+            }
+            else
+            {
+                if (player.isClimb == false)
+                    player.ChangeState(player.playerJumpShoot);
+                else
+                {
+                    player.ChangeState(player.playerClimbShoot);
+                }
+            }
+        }
+        
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            if (player.isClimb == true)
+            {
+                player.ChangeState(player.playerClimb);
+            }
+            
+            if (player.isClimb == false && player.isGround == true)
+            {
+                player.isGround = false;
+                player.Jump();
+                player.ChangeState(player.playerJump);
+            }
+        }
     }
 
     public void Exit()

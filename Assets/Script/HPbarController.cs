@@ -15,7 +15,7 @@ public class HPbarController : MonoBehaviour
     {
         slider = GetComponent<Slider>();
         EnemyController enemyController = GetComponent<EnemyController>();
-        //slider.maxValue = enemyController.hp;
+        slider.maxValue = enemyController.hp;
     }
 
     private void OnEnable()

@@ -7,7 +7,7 @@ using UnityEngine;
     {
         public TextMeshProUGUI textMeshPro;
         public AudioSource TypingSource; 
-        public float typingSpeed = 0.4f;
+        public float typingSpeed = 0.05f;
         public AudioClip typing;
         public bool finish = false;
 
@@ -28,7 +28,7 @@ using UnityEngine;
             for (int i=0 ; i<sentence.Length ; i++)
             {
                 char character = sentence[i];
-                //Debug.Log(character);
+                Debug.Log("sentence[i] !!!!!!!!!!!!  : " + sentence[i]);
                 textMeshPro.text += character;
                 yield return new WaitForSeconds(typingSpeed);
             }
